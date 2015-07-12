@@ -14,6 +14,7 @@
 		79D227601B525910006FCF8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D2275F1B525910006FCF8C /* Images.xcassets */; };
 		79D227631B525910006FCF8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D227611B525910006FCF8C /* LaunchScreen.xib */; };
 		79D2276F1B525910006FCF8C /* GCDTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2276E1B525910006FCF8C /* GCDTimerTests.m */; };
+		79D2277B1B5259C0006FCF8C /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2277A1B5259C0006FCF8C /* GCDTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		79D227681B525910006FCF8C /* GCDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D2276D1B525910006FCF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79D2276E1B525910006FCF8C /* GCDTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerTests.m; sourceTree = "<group>"; };
+		79D227791B5259C0006FCF8C /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		79D2277A1B5259C0006FCF8C /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		79D227511B525910006FCF8C /* GCDTimer */ = {
 			isa = PBXGroup;
 			children = (
+				79D227781B525981006FCF8C /* lib */,
 				79D227561B525910006FCF8C /* AppDelegate.h */,
 				79D227571B525910006FCF8C /* AppDelegate.m */,
 				79D227591B525910006FCF8C /* ViewController.h */,
@@ -117,6 +121,15 @@
 				79D2276D1B525910006FCF8C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79D227781B525981006FCF8C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				79D227791B5259C0006FCF8C /* GCDTimer.h */,
+				79D2277A1B5259C0006FCF8C /* GCDTimer.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D2277B1B5259C0006FCF8C /* GCDTimer.m in Sources */,
 				79D2275B1B525910006FCF8C /* ViewController.m in Sources */,
 				79D227581B525910006FCF8C /* AppDelegate.m in Sources */,
 				79D227551B525910006FCF8C /* main.m in Sources */,
@@ -416,6 +430,7 @@
 				79D227741B525910006FCF8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79D227751B525910006FCF8C /* Build configuration list for PBXNativeTarget "GCDTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				79D227771B525910006FCF8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
